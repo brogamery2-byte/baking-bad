@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "baking-bad",
+	"version": "${version}",
+	"name": "Baking bad",
+	"description": "This mod adds some changes to baking cooking as well as new food! Yum!",
+	"authors": [
+		"Blumedydumedy"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/baking-bad",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/baking-bad/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.blumedydumedy.bakingbad.BakingBad"
+		],
+		"fabric-datagen": [
+			"net.blumedydumedy.bakingbad.BakingBadDataGenerator"
+		],
+		"client": [
+			"net.blumedydumedy.bakingbad.BakingBadClient"
+		]
+	},
+	"mixins": [
+		"baking-bad.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
